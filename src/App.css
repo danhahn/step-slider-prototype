@@ -1,0 +1,51 @@
+.App {
+  border: 1px solid black;
+  width: calc(4 * 300px);
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.slider {
+  border: 2px solid orchid;
+  overflow: hidden;
+}
+
+.slider-inner {
+  display: flex;
+}
+
+.slide {
+  transition: opacity 1000ms;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.mobileSlider {
+  display: none;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (min-width: 410px) {
+
+}
+
+@media screen and (max-width: 410px) {
+  .App {
+    width: 100%;
+  }
+  .slider-inner {
+    display: none;
+  }
+  .mobileSlider {
+    display: flex;
+  }
+}
